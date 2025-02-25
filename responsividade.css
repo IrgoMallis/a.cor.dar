@@ -1,0 +1,525 @@
+/* Responsividade */
+@media (max-width: 768px) {
+    .unidades {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: transparent; /* Transparente para usar o fundo global */
+    color: #fff;
+}
+
+p, h2, a {
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4b79a1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #35597a;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4b79a1;
+    color: #fff;
+}
+/* Estilo da Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #4b79a1;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px;
+    border-radius: 5px;
+}
+/* Estilo do Link do Logo */
+.logo-link {
+    display: inline-block;
+    height: 40px;
+}
+
+/* Estilo da Imagem do Logo */
+.logo-imagem {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+/*Responsividade*/ 
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background-color: #4b79a1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .logo-link {
+        display: none; /* Ocultar logo no mobile */
+    }
+}
+
+/* =================== Design Responsivo Simplificado =================== */
+
+/* Fundo Global e Estilo Geral */
+body {
+    overflow-x: hidden;
+    background-color: #4686e0;
+}
+
+/* Estilo do Rodapé */
+footer {
+    padding: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Ajustes para Telas de Até 768px (Tablets e Smartphones) */
+@media (max-width: 768px) {
+    /* Ajustes Gerais */
+    body {
+        max-width: 100%;
+    }
+
+    .navbar {
+        padding: 0px;
+        background-color: #ffffff;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 15px;
+    }
+
+    /* Ocultar Imagens Decorativas no Mobile */
+    .logo-link, .logo-imagem, .imagem-container img, .seta-imagem, .bloco-rosa, .bloco-verde, .imagem-galeria, .blocos-coloridos-main {
+        display: none;
+    }
+
+    /* Texto Centralizado e Ajuste de Fontes */
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .btn-instagram, .btn-facebook, .btn-saiba-mais {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    /*Header*/
+    .header-content {
+        display: flex;
+        flex-direction: column-reverse; /* Inverte a ordem dos elementos */
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        max-width: 1200px;
+        text-align: center;
+    }
+    .text-container h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    /* Seção "Quem Somos" */
+
+    .quem-somos-content{
+        display: flex;
+        flex-direction: column-reverse; /* Inverte a ordem dos elementos */
+        align-items: center;
+        justify-content: center;
+        width: 1200px;
+        max-width: 1200px;
+        text-align: center;
+        margin-bottom: -60px;
+    }
+
+    .texto-container h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .texto-container h2 span{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .texto-container p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /*Seção Nosso Trabalho*/
+    .titulo-galeria h2{
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        line-height: 1.2;
+    }
+    .titulo-galeria h2 span{
+        font-size: 3rem;
+    }
+    .trabalho-servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 100px;
+        border-radius: 8px;
+
+    }
+    .nossos-servicos{
+        display:block;
+    }
+    .servicos-direita h2,
+    .servicos-direita p{
+        display: none;
+    }
+    .servicos-direita a{
+        display: flex;
+        font-size: 2.5rem;
+    }
+    .porque-acreditamos{
+        display: block;
+    }
+
+    
+
+    /* Ocultar Imagens em "Conheça Nossos Trabalhos" */
+    .galeria-imagens img {
+        display: none;
+    }
+
+    /* Seção "Nossos Serviços" */
+    .nossos-servicos{
+        border-radius: 10px;
+    }
+    .servicos-esquerda, .servicos-direita {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .servicos-esquerda {
+        flex: 1;
+        background-color: #4686e0;
+        padding: 40px;
+        color: #fff;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden; /* Garante que os cantos fiquem dentro da área */
+        font-size: 2.5rem; /* Aumenta o tamanho da fonte */
+        line-height: 2.5; /* Aumenta o espaçamento entre as linhas */
+    }
+    
+    /* Canto superior esquerdo */
+    .servicos-esquerda::before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 60px;
+        height: 60px;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        border-right: none;
+        border-bottom: none;
+    }
+    
+    /* Canto superior direito */
+    .servicos-esquerda::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 60px;
+        height: 60px;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        border-left: none;
+        border-bottom: none;
+    }
+    
+    /* Canto inferior esquerdo */
+    .servicos-esquerda .corner-bottom-left {
+        content: "";
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        width: 60px;
+        height: 60px;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        border-right: none;
+        border-top: none;
+    }
+    
+    /* Canto inferior direito */
+    .servicos-esquerda .corner-bottom-right {
+        content: "";
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        width: 60px;
+        height: 60px;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        border-left: none;
+        border-top: none;
+    }
+
+    .servicos-esquerda ul {
+        font-size: 1rem;
+    }
+    .servicos-esquerda li {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .btn-saiba-mais {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px 5px 5px;
+        background-color: #36cfc9;
+        color: #fff;
+        border-radius: 10px;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    /* Seção "Por Que Acreditamos" */
+
+    .porque-acreditamos{
+        padding: 0;
+    }
+
+    .coluna-esquerda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .coluna-esquerda h2{
+        font-size: 2rem;
+        line-height: 0.7;
+        text-align: center;
+    }
+    .coluna-esquerda .rosa{
+        line-height: 1.7;
+        font-size: 2rem;
+        font-weight: 1500;
+    }
+    .coluna-central p{
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin: 0;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .blocos-coloridos{
+        display: none;
+    }
+
+    /* Ocultar "Precisa de Ajuda" */
+    .precisa-ajuda {
+        display: none;
+    }
+
+    /* Ajustes para "Unidades de Contato" */
+    .blocos-coloridos2{
+        display:none;
+    }
+
+    .logo-centralizado {
+        display: none;
+    }
+
+    .unidades-contato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-contato .rosa, .titulo-contato .branco{
+        line-height: 1;
+    }
+    .titulo-contato .rosa{
+        font-size: 3rem;
+    }
+    .titulo-contato .branco{
+        font-size: 3rem;
+    }
+
+    .unidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Garante o alinhamento central */
+        justify-content: center; /* Centraliza melhor */
+        width: 100%;
+        gap: 50px;
+    }
+
+    .unidade-card1,
+    .unidade-card2 {
+        width: 90%; /* Mantém os cartões mais ajustados */
+        max-width: 300px;
+        padding: 15px;
+        height: auto;
+        margin: 0 auto; /* Ajusta a altura automaticamente */
+        position: relative; /* Garante que o botão fique posicionado corretamente */
+        overflow: visible; /* Permite que o botão saia do card */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .imagem-unidade {
+        width: 100px; /* Diminui a imagem */
+        height: 100px;
+    }
+
+    .unidade-card1 p,
+    .unidade-card2 p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+        text-align: center;
+        padding: 5px;
+    }
+
+    .btn-agende {
+        position: absolute;
+        bottom: -25px; /* Move o botão para baixo, saindo pela metade */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajuste fino para manter centralizado */
+        padding: 10px 20px; /* Ajusta o tamanho */
+        font-size: 1.2rem; /* Mantém legível no mobile */
+        font-weight: bold;
+        background-color: #4686e0; /* Cor do botão */
+        color: #ff6ec7;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona um leve sombreamento */
+    }
+
+    /*footer*/
+    footer {
+        padding: 5px 0; /* Reduz o espaço interno vertical */
+    }
+    footer p {
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 5px 0; /* Reduz o espaçamento vertical dos parágrafos */
+    }
+}
+
+/* Navbar para Telas de Até 375px (Smartphones Menores) */
+@media (max-width: 375px) {
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        background-color: #4b79a1;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
