@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #4686e0; /* Azul da Home */
+    background-color: #4d87fc; /* Azul da Home */
     overflow-x: hidden;
     color: #fff;
     line-height: 1.6;
@@ -18,7 +18,7 @@ footer{
 
 /* Estilo do Header */
 .main-header {
-    background-color: #4686e0;
+    background-color: #4d87fc;
     padding: 40px 20px;
     display: flex;
     align-items: center;
@@ -46,28 +46,28 @@ footer{
 }
 .rosa {
     margin: 10px 0;
-    color: #ff64c4;
+    color: #f067c5;
 }
 
 .amarelo {
     margin: 10px 0;
-    color: #ffd400;
+    color: #ffdd5b;
 }
 
 .text-container h1:nth-child(1) {
-    background-color: #ffd400; /* Amarelo */
+    background-color: #ffdd5b; /* Amarelo */
 }
 
 .text-container h1:nth-child(2) {
-    background-color: #4686e0; /* Azul */
+    background-color: #4d87fc; /* Azul */
 }
 
 .text-container h1:nth-child(3) {
-    background-color: #ff64c4; /* Rosa */
+    background-color: #f067c5; /* Rosa */
 }
 
 .text-container h1:nth-child(4) {
-    background-color: #4686e0; /* Azul */
+    background-color: #4d87fc; /* Azul */
 }
 
 /* Ajuste da Logo */
@@ -122,7 +122,7 @@ footer{
 
 .texto-container h2 {
     font-size: 4rem;
-    color: #ff64c4;
+    color: #ffa2df;
     font-family: "Poppins", sans-serif;
     text-align: center;
     line-height: 1.2;
@@ -130,7 +130,7 @@ footer{
 
 .texto-container h2 span {
     display: block;
-    color: #4686e0;
+    color: #4d87fc;
     font-size: 4rem;
     font-family: "Poppins", sans-serif;
 }
@@ -153,19 +153,19 @@ footer{
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: underline;
-    color: #ff64c4;
+    color: #ffa2df;
     font-weight: bold;
     display: inline-block;
 }
 
 .btn-instagram {
-    background-color: #4686e0;
+    background-color: #4d87fc;
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
 }
 
 .btn-facebook {
-    background-color: #4686e0;
+    background-color: #4d87fc;
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
 }
@@ -173,7 +173,7 @@ footer{
 /* Estilo da Seção Trabalho e Serviços */
 /* Estilo do Título da Galeria de Imagens */
 .titulo-galeria {
-    background-color: #ff64c4; /* Fundo rosa */
+    background-color: #f067c5; /* Fundo rosa */
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
@@ -182,7 +182,7 @@ footer{
 /* Estilo do Título da Galeria de Imagens (Ajuste de Espaçamento) */
 .titulo-galeria h2 {
     font-size: 4.5rem;
-    color: #ffd400; /* Amarelo para "CONHEÇA O NOSSO" */
+    color: #ffdd5b; /* Amarelo para "CONHEÇA O NOSSO" */
     font-family: "Poppins", sans-serif;
     line-height: 1.1; /* Reduz o espaçamento entre as linhas */
 }
@@ -200,7 +200,7 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    background-color: #ff64c4;
+    background-color: #f067c5;
 }
 
 .galeria-imagens {
@@ -223,14 +223,14 @@ footer{
     display: flex;
     gap: 20px;
     padding: 40px 20px;
-    background-color: #ffd400;
+    background-color: #ffdd5b;
     align-items: center;
     justify-content: center;
 }
 
 .servicos-esquerda {
     flex: 1;
-    background-color: #4686e0;
+    background-color: #4d87fc;
     padding: 40px;
     color: #fff;
     position: relative;
@@ -310,7 +310,7 @@ footer{
 /*Servicos da direta*/
 .servicos-direita {
     flex: 1;
-    background-color: #ffd400;
+    background-color: #ffdd5b;
     padding: 40px;
     border-radius: 10px;
     text-align: center;
@@ -344,7 +344,7 @@ footer{
 
 .servicos-direita h2 span {
     display: block;
-    color: #4686e0;
+    color: #4d87fc;
     font-size: 5rem;
     font-weight: bold;
     font-family: "Poppins",'Arial Black', sans-serif;
@@ -364,12 +364,13 @@ footer{
 .btn-saiba-mais {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #36cfc9;
+    background-color: #21c49d;
     color: #fff;
     border-radius: 10px;
     text-decoration: underline;
     font-weight: bold;
     font-size: 2rem;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 /* Estilo da Seção "Por que Acreditamos" */
@@ -379,7 +380,6 @@ footer{
     gap: 20px;
     padding: 20px;
 }
-
 
 /* Coluna Esquerda: Estilo do Texto */
 .coluna-esquerda {
@@ -400,11 +400,11 @@ footer{
 
 /* Estilo para Destaque de Cores */
 .coluna-esquerda .verde {
-    color: #36cfc9;
+    color: #21c49d;
 }
 
 .coluna-esquerda .rosa {
-    color: #ff6ec7;
+    color: #ffa2df;
 }
 
 /* Estilo do Contêiner */
@@ -459,13 +459,13 @@ footer{
 .bloco-rosa {
     width: 200px;
     height: 150px;
-    background-color: #ff6ec7;
+    background-color: #ffa2df;
 }
 
 .bloco-verde {
     width: 300px;
     height: 150px;
-    background-color: #36cfc9;
+    background-color: #21c49d;
 }
 
 
@@ -554,11 +554,11 @@ footer{
 
 /* Ajuste das cores dos títulos */
 .texto-ajuda h1 .rosa {
-    color: #ff6ec7;
+    color: #ffa2df;
 }
 
 .texto-ajuda h1 .azul {
-    color: #4686e0;
+    color: #4d87fc;
 }
 
 /* Ajuste da citação */
@@ -675,7 +675,7 @@ footer{
 .unidades-contato {
     position: relative;
     padding: 40px 20px;
-    background-color: #2ec4b6;
+    background-color: #21c49d;
     text-align: center;
     border-radius: 10px;
     margin-top: 40px;
@@ -699,7 +699,7 @@ footer{
 }
 
 .titulo-contato .rosa {
-    color: #ff6ec7;
+    color: #ffa2df;
 }
 
 .titulo-contato .branco {
@@ -766,7 +766,7 @@ footer{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #4686e0;
+    color: #4d87fc;
 }
 .unidade-card1 p,
 .unidade-card2 p {
@@ -783,8 +783,8 @@ footer{
     font-size: 1.7rem;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
-    color: #ff6ec7;
-    background-color: #4686e0;
+    color: #ffa2df;
+    background-color: #4d87fc;
     text-decoration: underline;
     border: none;
     border-radius: 10px;
@@ -806,13 +806,13 @@ footer{
 .bloco-rosa2 {
     width: 200px;
     height: 150px;
-    background-color: #ff6ec7;
+    background-color: #ffa2df;
 }
 
 .bloco-azul {
     width: 300px;
     height: 150px;
-    background-color: #4686e0;
+    background-color: #4d87fc;
 }
 
 
