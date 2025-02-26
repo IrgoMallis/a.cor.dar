@@ -440,7 +440,6 @@ footer{
     background-color: #4686e0;
 }
 
-
 /* Responsividade */
 @media (max-width: 768px) {
     .unidades {
@@ -591,19 +590,13 @@ body {
     background-color: #4686e0;
 }
 
-/* Estilo do Rodapé */
-footer {
-    padding: 20px;
-    font-size: 0.8rem;
-    text-align: center;
-}
+
 
 /* Ajustes para Telas de Até 768px (Tablets e Smartphones) */
 @media (max-width: 768px) {
     /* Ajustes Gerais */
     body {
         max-width: 100%;
-        margin-left: 0;
     }
 
     .navbar {
@@ -619,7 +612,7 @@ footer {
     }
 
     /* Ocultar Imagens Decorativas no Mobile */
-    .logo-link, .logo-imagem, .imagem-container img, .seta-imagem, .bloco-rosa, .bloco-verde, .imagem-galeria {
+    .logo-link, .logo-imagem, .imagem-container img, .seta-imagem, .bloco-rosa, .bloco-verde, .imagem-galeria, .blocos-coloridos-main {
         display: none;
     }
 
@@ -645,94 +638,183 @@ footer {
         padding: 10px 20px;
     }
 
-    /* Seção "Quem Somos" */
-
-    .texto-container h2 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    .texto-container h2 span{
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .texto-container p {
-        font-size: 1rem;
-        text-align: left;
-    }
-
-    .titulo-galeria h2,
-    .titulo-galeria h2 span{
-        font-size: 3.7rem;
-        text-align: center;
-    }
-    .trabalho-servicos {
+    /*Header*/
+    .header-content {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse; /* Inverte a ordem dos elementos */
         align-items: center;
-        padding: 0 100px;
+        justify-content: center;
+        width: 50%;
+        max-width: 1200px;
+        text-align: center;
     }
-    .nossos-servicos{
-        display:block;
-    }
-    .servicos-direita h2,
-    .servicos-direita p{
-        display: none;
-    }
-    .servicos-direita a{
-        display: flex;
+    .text-container h1{
         font-size: 2.5rem;
-    }
-    .porque-acreditamos{
-        display: block;
-    }
-
-    .coluna-esquerda h2{
-        text-align: justify;
-        font-size: 2rem;
-        line-height: 1;
-        margin: 0;
-    }
-    .coluna-central p{
-        text-align: left;
-        font-size: 1.4rem;
-        line-height: 1.1;
-        margin: 0;
-    }
-    .blocos-coloridos{
-        display: none;
-    }
-
-    /* Ocultar Imagens em "Conheça Nossos Trabalhos" */
-    .galeria-imagens img {
-        display: none;
+        text-align: center;
     }
 
     /* Seção "Nossos Serviços" */
-    .servicos-esquerda, .servicos-direita {
+    .nossos-servicos{
+        background-color: transparent; /* Remove o fundo roxo apenas no mobile */
+        padding: 40px 20px; /* Reduz a margem */
+    }
+
+    .profissionais {
+        display: flex;
+        flex-direction: column; /* Mantém os profissionais um abaixo do outro */
+        align-items: center; /* Centraliza os cards */
+        gap: 20px; /* Espaçamento entre os profissionais */
+        margin-right: 0; /* Remove margem lateral extra */
+        padding: 0 20px; /* Adiciona espaço nas laterais para evitar encostar na borda */
+    }
+    .profissional1,
+    .profissional2 {
+        width: 150%; /* Mantém os cards mais ajustados na tela */
+        height: auto;
+        max-width: 350px; /* Define um limite para não ficarem muito largos */
+    }
+    .titulo-profissional {
+        font-size: 1.8rem; /* Reduz para melhorar a leitura */
+    }
+    .negrito {
+        font-size: 0.9rem; /* Reduz para melhor ajuste */
+    }
+    .texto {
+        font-size: 1rem; /* Ajuste fino no tamanho */
+    }
+
+    .blocos-coloridos-serv{
+        display: none;
+    }
+    .servicos-esquerda{
         width: 100%;
         padding: 20px;
+    }
+
+    .servicos-esquerda {
+        flex: 1;
+        background-color: #4686e0;
+        padding: 40px;
+        color: #fff;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden; /* Garante que os cantos fiquem dentro da área */
+        font-size: 2.5rem; /* Aumenta o tamanho da fonte */
+        line-height: 2.5; /* Aumenta o espaçamento entre as linhas */
+    }
+    
+    /* Canto superior esquerdo */
+    .servicos-esquerda::before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 60px;
+        height: 60px;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        border-right: none;
+        border-bottom: none;
+    }
+    
+    /* Canto superior direito */
+    .servicos-esquerda::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 60px;
+        height: 60px;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        border-left: none;
+        border-bottom: none;
+    }
+    
+    /* Canto inferior esquerdo */
+    .servicos-esquerda .corner-bottom-left {
+        content: "";
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        width: 60px;
+        height: 60px;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        border-right: none;
+        border-top: none;
+    }
+    
+    /* Canto inferior direito */
+    .servicos-esquerda .corner-bottom-right {
+        content: "";
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        width: 60px;
+        height: 60px;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        border-left: none;
+        border-top: none;
     }
 
     .servicos-esquerda ul {
         font-size: 1rem;
     }
-
-    .servicos-direita h2 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .servicos-direita p {
-        font-size: 0.9rem;
-        text-align: justify;
-    }
-
-    /* Seção "Por Que Acreditamos" 
-    .coluna-central p, .coluna-esquerda h2 {
+    .servicos-esquerda li {
         font-size: 1rem;
+        line-height: 1.5;
+    }
+    .servicos-direita{
+        display: none;
+        
+    }
+    .btn-saiba-mais {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px 5px 5px;
+        background-color: #36cfc9;
+        color: #fff;
+        border-radius: 10px;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    /* Seção "Por Que Acreditamos" */
+
+    .porque-acreditamos{
+        padding: 0;
+    }
+
+    .coluna-esquerda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-    }*/
+    }
+    .coluna-esquerda h2{
+        font-size: 2rem;
+        line-height: 0.7;
+        text-align: center;
+    }
+    .coluna-esquerda .rosa{
+        line-height: 1.7;
+        font-size: 2rem;
+        font-weight: 1500;
+    }
+    .coluna-central p{
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin: 0;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .blocos-coloridos{
+        display: none;
+    }
 
     /* Ocultar "Precisa de Ajuda" */
     .precisa-ajuda {
@@ -740,6 +822,10 @@ footer {
     }
 
     /* Ajustes para "Unidades de Contato" */
+    .blocos-coloridos2{
+        display:none;
+    }
+
     .logo-centralizado {
         display: none;
     }
@@ -748,51 +834,114 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    .titulo-contato p{
-        font-size: 2.5rem;
-        line-height: 1.3;
+
+    .titulo-contato .rosa, .titulo-contato .branco{
+        line-height: 1;
+    }
+    .titulo-contato .rosa{
+        font-size: 3rem;
+    }
+    .titulo-contato .branco{
+        font-size: 3rem;
     }
 
-    .unidades {
-        width: 100%;
-        max-width: 768px;
-        padding: 0 7px;
-        border-radius: 10px;
+    /* Ajustes para "Unidades de Contato" */
+    .blocos-coloridos2{
+        display:none;
     }
 
-    .titulo-unidade h3{
-        margin-bottom: 10px;
-        font-size: 1.5rem;
+    .logo-centralizado {
+        display: none;
     }
 
-    .unidade-card1 p,
-    .unidade-card2 p {
-        font-size: 1rem;
-        text-align: center;
-        padding: 10px;
-    }
-    .btn-agende{
-        padding: 10px 10px 10px 10px;
-    }
-}
-
-/* Ajustes para Telas de Até 600px (Smartphones Pequenos) */
-@media (max-width: 600px) {
-    .unidades {
+    .unidades-contato{
+        display: flex;
         flex-direction: column;
-        gap: 15px;
     }
 
-    .unidade-card {
-        width: 90%;
-        margin: 0 auto;
-        padding: 20px;
+    .titulo-contato .rosa, .titulo-contato .branco{
+        line-height: 1;
+    }
+    .titulo-contato .rosa{
+        font-size: 3rem;
+    }
+    .titulo-contato .branco{
+        font-size: 3rem;
+    }
+
+    .unidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Garante o alinhamento central */
+        justify-content: center; /* Centraliza melhor */
+        width: 100%;
+        gap: 50px;
+    }
+
+    .unidade-card2 {
+        width: 90%; /* Mantém os cartões mais ajustados */
+        max-width: 300px;
+        padding: 15px;
+        height: auto;
+        margin: 0 auto; /* Ajusta a altura automaticamente */
+        position: relative; /* Garante que o botão fique posicionado corretamente */
+        overflow: visible; /* Permite que o botão saia do card */
+        text-align: center; /* Centraliza o conteúdo */
+        margin-top: -80px;
     }
 
     .imagem-unidade {
-        width: 100px;
+        width: 100px; /* Diminui a imagem */
         height: 100px;
-        object-fit: cover;
+    }
+
+    .unidade-card2 p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .unidade-card2 .telefone{
+        margin-bottom: -8px;
+    }
+
+    .titulo-rosa{
+        font-size: 3rem;
+    }
+    .titulo-unidade{
+        font-size: 2.5rem;
+    }
+
+    .btn-agende2 {
+        position: absolute;
+        bottom: -25px; /* Move o botão para baixo, saindo metade para fora */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta para manter centralizado */
+        padding: 10px 20px; /* Mantém o tamanho adequado */
+        font-size: 1.2rem; /* Ajusta a legibilidade no mobile */
+        font-weight: bold;
+        background-color: #4d87fc; /* Cor do botão */
+        color: #ffa2df;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona um leve sombreamento */
+        margin-top: 0px;
+    }
+
+    /*footer*/
+    footer {
+        text-align: center;
+        padding: 0;
+        background-color: #4b79a1;
+        color: #fff; 
+        margin-right: -10px;       
+    }
+    footer p {
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 0px 0px 0px 0px; /* Reduz o espaçamento vertical dos parágrafos */
     }
 }
 
@@ -814,6 +963,3 @@ footer {
         display: flex;
     }
 }
-
-
-
